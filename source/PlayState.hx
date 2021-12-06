@@ -367,7 +367,8 @@ class PlayState extends MusicBeatState
 					curStage = 'schoolEvil';
 				default:
 					curStage = 'stage';
-			}
+			}case 'tutorial':
+			     startDialogue(dialogueJson);
 		}
 
 		var stageData:StageFile = StageData.getStageFile(curStage);
